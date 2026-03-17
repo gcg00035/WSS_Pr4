@@ -1,0 +1,904 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Es_propiedad_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Es_propiedad_de">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_propietario_de"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Se_dedica_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Se_dedica_a">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_explotada_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#asignado_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#asignado_a">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Departamento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#compuesta_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#compuesta_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Departamento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#dirige -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#dirige">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_dirigida_por"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Directivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_cliente_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_cliente_de">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_de_cliente_a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_dirigida_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_dirigida_por">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Directivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_explotada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_explotada_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_ocupada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_ocupada_por">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_propietario_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_propietario_de">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#funciona_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#funciona_en">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sede"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_de_cliente_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_de_cliente_a"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_filial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_filial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#trabaja_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#trabaja_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ubicada_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ubicada_en">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#País"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#beneficios -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#beneficios">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#cif -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#cif">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#facturación_anual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#facturación_anual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#horario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#horario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#País"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#perdidas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#perdidas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#salario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#salario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Departamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Departamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Directivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Directivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#País -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#País"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sede -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sede">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+        <untitled-ontology-3:Se_dedica_a rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Finanzas"/>
+        <untitled-ontology-3:Se_dedica_a rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Tecnologia"/>
+        <untitled-ontology-3:compuesta_por rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT"/>
+        <untitled-ontology-3:tiene rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#SedeMadrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Carlos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Carlos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista"/>
+        <untitled-ontology-3:es_propietario_de rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Departamento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#España -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#España">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#País"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Fernando -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Fernando">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+        <untitled-ontology-3:asignado_a rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Finanzas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Finanzas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Tecnologia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Fran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Fran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+        <untitled-ontology-3:es_cliente_de rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Juan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Juan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+        <untitled-ontology-3:asignado_a rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT"/>
+        <untitled-ontology-3:trabaja_en rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Pedro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Pedro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Directivo"/>
+        <untitled-ontology-3:dirige rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#SedeMadrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#SedeMadrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sede"/>
+        <untitled-ontology-3:ubicada_en rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#España"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Tecnologia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Tecnologia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Oficina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Organización"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#País"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Sector"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Carlos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#España"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Fernando"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Finanzas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Fran"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Juan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Pedro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#SedeMadrid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Tecnologia"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Apple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Carlos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#DepartamentoIT"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#España"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Finanzas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Juan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Pedro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#SedeMadrid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Tecnologia"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Si un accionista es propietario de una empresa, entonces la empresa es propiedad de ese accionista.</rdfs:comment>
+        <rdfs:label>Regla 3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_propietario_de"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Es_propiedad_de"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Si un accionista es propietario de una empresa y esa empresa tiene una filial, entonces el accionista también es propietario de la filial.</rdfs:comment>
+        <rdfs:label>Regla 5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Accionista"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_propietario_de"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_filial"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#es_propietario_de"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/a"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Si un trabajador está asignado a un departamento, trabaja en esa organización.</rdfs:comment>
+        <rdfs:label>Regla 6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Trabajador"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Departamento"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#asignado_a"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#compuesta_por"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#trabaja_en"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Un directivo que dirige una empresa también trabaja en ella.</rdfs:comment>
+        <rdfs:label>Regla 1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Directivo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#dirige"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#trabaja_en"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Si una empresa tiene una sede y tiene una filial, entonces la filial funciona en esa sede.</rdfs:comment>
+        <rdfs:label>Regla 7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene_filial"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#funciona_en"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/f"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Regla 8</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tiene"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ubicada_en"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ubicada_en"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,8 @@
+Nombre,Rol,Salario,Empresa_Asociada,Departamento,Es_Accionista
+Ana Garcia,Trabajador,3000,Apple,Departamento_IT,NO
+Luis Lopez,Directivo,8000,Microsoft,,NO
+Elena Torres,Trabajador,2500,Apple_Espana,Recursos_Humanos,NO
+Bill Gates,Directivo,12000,Microsoft,,SI
+Tim Cook,Directivo,15000,Apple,,NO
+Carlos Slim,Accionista,,Apple,,SI
+Juan Perez,Trabajador,2800,GitHub,Desarrollo,NO
