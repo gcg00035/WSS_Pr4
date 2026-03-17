@@ -6,5 +6,5 @@ Para garantizar la replicabilidad exacta del proyecto, se ha utilizado un entorn
 
 ### Pasos para ejecutar:
 1. Crear y activar el entorno virtual
-2. ejecutar `pip install -r rrequirements.txt`
+2. ejecutar `pip install -r requirements.txt`
 3. Ejecutar el script `python poblar_ontologia.py`
